@@ -11,6 +11,10 @@
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<!-- Proteccion contra csrf -->
+	<meta name="_csrf" content="${_csrf.token}"/>
+	<!-- default header name is X-CSRF-TOKEN -->
+	<meta name="_csrf_header" content="${_csrf.headerName}"/>
 </head>
 <body>
 	<div class="row">
@@ -21,12 +25,13 @@
 					<form role="form">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="Correo eléctronico" name="email" type="email" autofocus="">
+								<input class="form-control" placeholder="Correo eléctronico" id="user" type="text" autofocus="">
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+								<input class="form-control" placeholder="Contraseña" id="password" type="password">
 							</div>
-							<a href="index.html" class="btn btn-primary">Iniciar sesión</a></fieldset>
+							<button class="btn btn-primary" id="login-btn" >Iniciar sesión</button>
+						</fieldset>
 					</form>
 				</div>
 			</div>
@@ -35,6 +40,7 @@
 	
 
 <script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
