@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    var url= "https://christian-ubuntu:5050/usuario";
+    var url= "http://christian-ubuntu:5050/usuario";
 
     //$("#login-btn").click(function(){
  	//	var xmlhttp = new XMLHttpRequest();
