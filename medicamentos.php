@@ -17,6 +17,11 @@
 	<![endif]-->
 </head>
 <body>
+	<?php
+		if (session_status() != PHP_SESSION_ACTIVE)
+			header("Location: login.php");
+	?>
+	
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
