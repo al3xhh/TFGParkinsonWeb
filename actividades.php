@@ -18,8 +18,10 @@
 </head>
 <body>
 	<?php
-		if (session_status() != PHP_SESSION_ACTIVE)
+		session_start();
+		if (!isset($_SESSION['session_name'])){
 			header("Location: login.php");
+		}
 	?>
 	
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -45,10 +47,10 @@
 		</div>
 		<div class="divider"></div>
 		<ul class="nav menu">
-			<li><a href="index.html"><em class="fa fa-users">&nbsp;</em> Pacientes</a></li>
-			<li class="active"><a href="actividades.html"><em class="fa fa-tasks">&nbsp;</em> Actividades</a></li>
-			<li><a href="medicamentos.html"><em class="fa fa-heart">&nbsp;</em> Medicamentos</a></li>
-			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Cerrar sesión</a></li>
+			<li><a href="index.php"><em class="fa fa-users">&nbsp;</em> Pacientes</a></li>
+			<li class="active"><a href="actividades.php"><em class="fa fa-tasks">&nbsp;</em> Actividades</a></li>
+			<li><a href="medicamentos.php"><em class="fa fa-heart">&nbsp;</em> Medicamentos</a></li>
+			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Cerrar sesión</a></li>
 		</ul>
 	</div><!--/.sidebar-->
 		

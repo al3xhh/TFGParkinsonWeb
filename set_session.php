@@ -1,6 +1,13 @@
 <?
-session_start();
 
-if (isset($_POST['session_name'])) {$_SESSION['session_name'] = $_POST['session_name'];}
+
+if (isset($_GET['session_name'])) {
+    session_start();
+    $_SESSION['session_name'] = $_GET['session_name'];
+    header("Location: index.php");
+}
+else{
+    header("Location: login.php");
+}
 
 ?>

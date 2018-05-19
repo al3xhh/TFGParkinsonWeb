@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+<?php
+	if($_SERVER["REQUEST_METHOD"] == "POST") {
+   	  	if (isset($_POST['session_name'])) {
+			session_start();
+			 $_SESSION['session_name'] = $_POST['session_name'];
+		}
+	}
+   ?>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
