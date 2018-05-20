@@ -48,8 +48,6 @@
 		<div class="divider"></div>
 		<ul class="nav menu">
 			<li><a href="index.php"><em class="fa fa-users">&nbsp;</em> Pacientes</a></li>
-			<li class="active"><a href="actividades.php"><em class="fa fa-tasks">&nbsp;</em> Actividades</a></li>
-			<li><a href="medicamentos.php"><em class="fa fa-heart">&nbsp;</em> Medicamentos</a></li>
 			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Cerrar sesión</a></li>
 		</ul>
 	</div><!--/.sidebar-->

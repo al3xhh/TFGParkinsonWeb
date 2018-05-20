@@ -50,8 +50,6 @@
 		<div class="divider"></div>
 		<ul class="nav menu">
 			<li class="active"><a href="index.php"><em class="fa fa-users">&nbsp;</em> Pacientes</a></li>
-			<li><a href="actividades.php"><em class="fa fa-tasks">&nbsp;</em> Actividades</a></li>
-			<li><a href="medicamentos.php"><em class="fa fa-heart">&nbsp;</em> Medicamentos</a></li>
 			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Cerrar sesión</a></li>
 		</ul>
 	</div><!--/.sidebar-->
@@ -77,7 +75,7 @@
 				<div class="col-xs-12 col-md-12 col-lg-12 no-padding">
 					<div class="panel panel-orange panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-users color-teal"></em>
-							<div class="large">24</div>
+							<div class="large" id="num_pacientes"></div>
 							<div class="text-muted">Pacientes</div>
 						</div>
 					</div>
@@ -88,14 +86,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default chat">
-					<div class="panel-body">
-						<ul class="list-group">
-							<li class="list-group-item"><a>Paciente 1</a></li>
-							<li class="list-group-item"><a>Paciente 2</a></li>
-							<li class="list-group-item"><a>Paciente 3</a></li>
-							<li class="list-group-item"><a>Paciente 4</a></li>
-							<li class="list-group-item"><a>Paciente 5</a></li>
-						  </ul>
+					<div class="panel-body" id="lista_pacientes">
 					</div>
 				</div>
 			</div><!--/.col-->
@@ -114,17 +105,6 @@
 	<script src="js/easypiechart-data.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/custom.js"></script>
-	<script>
-		window.onload = function () {
-	var chart1 = document.getElementById("line-chart").getContext("2d");
-	window.myLine = new Chart(chart1).Line(lineChartData, {
-	responsive: true,
-	scaleLineColor: "rgba(0,0,0,.2)",
-	scaleGridLineColor: "rgba(0,0,0,.05)",
-	scaleFontColor: "#c5c7cc"
-	});
-};
-	</script>
-		
+	<script src="js/index.js"></script>
 </body>
 </html>
