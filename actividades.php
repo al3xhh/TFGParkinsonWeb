@@ -55,10 +55,15 @@
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
-				<li><a href="#">
+				<li><a href="index.php">
 					<em class="fa fa-home"></em>
 				</a></li>
 				<li class="active">Actividades</li>
+				<li class="active">
+					<?php
+						echo $_GET['usuario'];
+					?>
+				</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -75,13 +80,7 @@
 						Tipo
 					</div>
 					<div class="panel-body" style='height: 122px;'>
-						<div class="form-group">
-							<select class="form-control">
-								<option>Andar</option>
-								<option>Estar de pie</option>
-								<option>Mover el brazo</option>
-							</select>
-						</div>	
+						<div class="form-group" id="tipo_actividad"></div>	
 					</div>								  
 				</div>			  
 			</div>
@@ -117,7 +116,6 @@
 		</div>
 	</div>	<!--/.main-->
 	  
-
 <script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
@@ -126,6 +124,6 @@
 	<script src="js/easypiechart-data.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/custom.js"></script>
-	
+	<script src="js/actividades.js"></script>
 </body>
 </html>
