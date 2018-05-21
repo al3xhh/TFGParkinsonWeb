@@ -74,7 +74,7 @@
 		</div><!--/.row-->
 
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						Tipo
@@ -84,39 +84,44 @@
 					</div>								  
 				</div>			  
 			</div>
-			<div class="col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						Brazo
-					</div>
-					<div class="panel-body" style='height: 122px;'>
-						<div class="form-group">
-							<select class="form-control">
-								<option>Derecho</option>
-								<option>Izquierdo</option>
-								<option>Ambos</option>
-							</select>
-						</div>	
-					</div>									  
-				</div>			  
-			</div>
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						Fecha
 					</div>
 					<div class="panel-body">
-						<div class="input-group input-daterange">
-							<input type="date" class="form-control">
-							<input type="date" class="form-control">
-						</div>	
+						<input type="date" class="form-control" id="fecha_inicio">
+						<input type="date" class="form-control" id="fecha_fin">
 					</div>								
 				</div>			  
 			</div>
 		</div>
+	
+		<button type="button" class="btn btn-primary" id="buscar">Buscar</button>
+
+		<div class="row text-center" style="margin-top:15px; margin-left:2px; margin-right:2px"> 
+			<div class="col-md-4" style="background-color:rgba(255, 0, 0, 1)">Eje X</div>
+			<div class="col-md-4" style="background-color:rgba(48, 164, 255, 1)">Eje Y</div>
+			<div class="col-md-4" style="background-color:rgb(63, 191, 191, 1)">Eje Z</div>
+		</div>
+
+		<div class="row" style="margin-top:15px">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Datos
+					</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
 	</div>	<!--/.main-->
 	  
-<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
 	<script src="js/chart-data.js"></script>
@@ -124,6 +129,6 @@
 	<script src="js/easypiechart-data.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/custom.js"></script>
-	<script src="js/actividades.js"></script>
+	<script src="js/actividades.js"></script>	
 </body>
 </html>

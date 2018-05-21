@@ -17,7 +17,7 @@ $(document).ready(function() {
                         '<p><strong>Nombre: </strong>' + elemento['nombre'] + '</p> ' +
                         '<p><strong>Device id: </strong>' + elemento['device'] + '</p> ' +
                         '<a href="/actividades.php?usuario=' + elemento['nombre'] + '&device=' + elemento['device'] + '" type="button" class="btn btn-primary">Actividades</a> ' +
-                        '<a href="/medicamentosphp?usuario=' + elemento['nombre'] + '&device=' + elemento['device'] + '" type="button" class="btn btn-primary">Medicamentos</a> ' +
+                        '<a href="/medicamentos.php?usuario=' + elemento['nombre'] + '&device=' + elemento['device'] + '" type="button" class="btn btn-primary">Medicamentos</a> ' +
                         '</li>';
             });
 

@@ -40,7 +40,7 @@ $(document).ready(function() {
     var device = url.searchParams.get("device");
     var options =  'where={"device_id":"' + device + '"}';
 
-    $.post("api.php", {'table' : 'actividades', 'options' : options}, function(data) {
+    $.post("api.php", {'table' : 'medicamentos', 'options' : options}, function(data) {
         var result = JSON.parse(data)['_items'];
         var actividades = [];
 
