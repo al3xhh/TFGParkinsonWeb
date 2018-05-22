@@ -99,26 +99,28 @@
 	
 		<button type="button" class="btn btn-primary" id="buscar">Buscar</button>
 
-		<div class="row text-center" style="margin-top:15px; margin-left:2px; margin-right:2px"> 
-			<div class="col-md-4" style="background-color:rgba(255, 0, 0, 1)">Eje X</div>
-			<div class="col-md-4" style="background-color:rgba(48, 164, 255, 1)">Eje Y</div>
-			<div class="col-md-4" style="background-color:rgb(63, 191, 191, 1)">Eje Z</div>
-		</div>
+		<div id="datos">
+			<div class="row text-center" style="margin-top:15px; margin-left:2px; margin-right:2px"> 
+				<div class="col-md-4" style="background-color:rgba(255, 0, 0, 1)">Eje X</div>
+				<div class="col-md-4" style="background-color:rgba(48, 164, 255, 1)">Eje Y</div>
+				<div class="col-md-4" style="background-color:rgb(63, 191, 191, 1)">Eje Z</div>
+			</div>
 
-		<div class="row" style="margin-top:15px">
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						Datos
-					</div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+			<div class="row" style="margin-top:15px">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Datos
+						</div>
+						<div class="panel-body">
+							<div class="canvas-wrapper">
+								<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div><!--/.row-->
+			</div><!--/.row-->
+		</div>
 	</div>	<!--/.main-->
 	  
 	<script src="js/jquery-1.11.1.min.js"></script>
