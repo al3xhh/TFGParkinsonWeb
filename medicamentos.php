@@ -81,7 +81,7 @@
 						Tipo
 					</div>
 					<div class="panel-body" style='height: 122px;'>
-						<div class="form-group" id="tipo_actividad"></div>	
+						<div class="form-group" id="tipo_medicamento"></div>	
 					</div>								  
 				</div>			  
 			</div>
@@ -100,21 +100,20 @@
 	
 		<button type="button" class="btn btn-primary" id="buscar">Buscar</button>
 
-		<div class="row text-center" style="margin-top:15px; margin-left:2px; margin-right:2px"> 
-			<div class="col-md-4" style="background-color:rgba(255, 0, 0, 1)">Eje X</div>
-			<div class="col-md-4" style="background-color:rgba(48, 164, 255, 1)">Eje Y</div>
-			<div class="col-md-4" style="background-color:rgb(63, 191, 191, 1)">Eje Z</div>
-		</div>
-
 		<div class="row" style="margin-top:15px">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Datos
+						Tomas no registradas
 					</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+							<div class="alert alert-danger">
+								<strong>Medicacion no tomada:</strong> 27/05/2017 - 09:00
+							</div>
+							<div class="alert alert-danger">
+								<strong>Medicacion no tomada:</strong> 22/05/2017 - 09:00
+							</div>
 						</div>
 					</div>
 				</div>

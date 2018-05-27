@@ -42,24 +42,24 @@ $(document).ready(function() {
 
     $.post("api.php", {'table' : 'medicamentos', 'options' : options}, function(data) {
         var result = JSON.parse(data)['_items'];
-        var actividades = [];
+        var medicamentos = [];
 
         result.forEach(function(elemento) {
-            if (!actividades.includes(elemento['nombre']))
-                actividades.push(elemento['nombre']);
+            if (!medicamentos.includes(elemento['nombre']))
+                medicamentos.push(elemento['nombre']);
         });
 
         var html = "";
 
-        html += '<select class="form-control" id="actividad">';
+        html += '<select class="form-control" id="medicamento">';
 
-        actividades.forEach(function(elemento) {
+        medicamentos.forEach(function(elemento) {
             html += '<option>' + elemento + '</option>';
         });
 
         html += '</select>';
 
-        $("#tipo_actividad").html(html);
+        $("#tipo_medicamento").html(html);
 
         var ahora = new Date();
 
