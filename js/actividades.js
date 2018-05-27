@@ -10,6 +10,8 @@ var contador;
 var fechas_tam;
 
 function pinta() {
+    $("#datos").show();
+
     lineChartData = {
         labels : labels,
         datasets : [
@@ -94,7 +96,7 @@ $(document).ready(function() {
 });
 
 $( "#buscar" ).click(function() {
-    $("#datos").show();
+    $("#datos").hide();
 
     acelerometrox = [];
     acelerometroy = [];
@@ -108,10 +110,8 @@ $( "#buscar" ).click(function() {
     var fecha_inicio =  $("#fecha_inicio").val();
     var fecha_fin =  $("#fecha_fin").val();
 
-    fecha_inicio = (fecha_inicio.split("-")[2] < 10 ? "0" + fecha_inicio.split("-")[2] : fecha_inicio.split("-")[2]) 
-                            + "/" + fecha_inicio.split("-")[1] + "/" + fecha_inicio.split("-")[0] + escape(" 00:00"); 
-    fecha_fin = (fecha_fin.split("-")[2] < 10 ? "0" + fecha_fin.split("-")[2] : fecha_fin.split("-")[2]) 
-                            + "/" + fecha_fin.split("-")[1] + "/" + fecha_fin.split("-")[0] + escape(" 23:59");
+    fecha_inicio = fecha_inicio.split("-")[2] + "/" + fecha_inicio.split("-")[1] + "/" + fecha_inicio.split("-")[0] + escape(" 00:00"); 
+    fecha_fin = fecha_fin.split("-")[2] + "/" + fecha_fin.split("-")[1] + "/" + fecha_fin.split("-")[0] + escape(" 23:59");
 
     var options = 'where={"$and":[{"nombre":"' + escape(tipo) + '"},{"device_id":"' + device + '"},{"fecha":{"$gte":"' + fecha_inicio + '"}},{"fecha":{"$lte":"' + fecha_fin + '"}}]}';
 

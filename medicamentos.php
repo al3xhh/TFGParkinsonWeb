@@ -100,20 +100,14 @@
 	
 		<button type="button" class="btn btn-primary" id="buscar">Buscar</button>
 
-		<div class="row" style="margin-top:15px">
+		<div class="row" style="margin-top:15px" id="datos">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						Tomas no registradas
 					</div>
 					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<div class="alert alert-danger">
-								<strong>Medicacion no tomada:</strong> 27/05/2017 - 09:00
-							</div>
-							<div class="alert alert-danger">
-								<strong>Medicacion no tomada:</strong> 22/05/2017 - 09:00
-							</div>
+						<div class="canvas-wrapper" id="medicamentos">
 						</div>
 					</div>
 				</div>
