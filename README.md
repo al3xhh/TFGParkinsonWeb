@@ -12,7 +12,7 @@ dependencias necesarias son las siguientes:</p>
 </ul>
 
 <p align="justify">Para utilizarla hay que tener instalado un servidor HTTP y basta con copiar todo el código disponible aquí en la carpeta
-raíz del servidor (HTDOCS en caso de usar XAMPP) La aplicación web necesite que la [API]: https://github.com/christian7007/TFGParkinsonAPI
+raíz del servidor (HTDOCS en caso de usar XAMPP) La aplicación web necesite que la API (https://github.com/christian7007/TFGParkinsonAPI)
 esté levantada.</p>
 
 <p>Funciones principales de la WEB:<p>
